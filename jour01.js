@@ -28,9 +28,9 @@ console.log(food.replace("meh", "so good"));
 
 var basic = "This is Cool"
 
-var basicUp = basic.toUpperCase(basic);
+var basicUp = basic.toUpperCase();
 
-var basicDown =basic.toLowerCase(basic);
+var basicDown =basic.toLowerCase();
 
 console.log(basic);
 
