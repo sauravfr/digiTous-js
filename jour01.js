@@ -12,3 +12,9 @@ console.log(myName);
 
 console.log("My name is " + myName +".");
 
+//04 - String Length
+
+var text = "I'm very long !";
+
+console.log(text.length);
+
