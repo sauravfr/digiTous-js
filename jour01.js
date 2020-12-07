@@ -38,3 +38,10 @@ console.log(basicUp);
 
 console.log(basicDown);
 
+//07 - Split
+
+var word = "banana"
+
+var letters = word.split("");
+
+console.log(letters);
