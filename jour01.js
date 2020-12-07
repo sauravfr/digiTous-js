@@ -10,7 +10,7 @@ console.log(test);
 //03-Concatenation
 var name = "Jhon"
 
-console.log("My name is " + name +".");
+console.log("Nice to meet you " + name +".");
 
 //04 - String Length
 
@@ -23,4 +23,18 @@ console.log(testLength.length);
 var food = "Croissant is meh";
 
 console.log(food.replace("meh", "so good"));
+
+//06 - Up and Down
+
+var basic = "This is Cool"
+
+var basicUp = basic.toUpperCase(basic);
+
+var basicDown =basic.toLowerCase(basic);
+
+console.log(basic);
+
+console.log(basicUp);
+
+console.log(basicDown);
 
