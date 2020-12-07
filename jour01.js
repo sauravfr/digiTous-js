@@ -2,19 +2,25 @@
 
 console.log("Hello World !");
 
-//02-String and 
+//02-String 
+var test = "My name is Jhon"
 
-var myName = "Saurav";
-
-console.log(myName);
+console.log(test);
 
 //03-Concatenation
+var name = "Jhon"
 
-console.log("My name is " + myName +".");
+console.log("My name is " + name +".");
 
 //04 - String Length
 
-var text = "I'm very long !";
+var testLength = "I'm very long !";
 
-console.log(text.length);
+console.log(testLength.length);
+
+//05 - Replace
+
+var food = "Croissant is meh";
+
+console.log(food.replace("meh", "so good"));
 
