@@ -31,3 +31,11 @@ var bis = 5;
 
 console.log(test+bis);
 
+//05 - Comparaison
+
+var test =143;
+
+var bis = 219;
+
+console.log(test==bis);
+
