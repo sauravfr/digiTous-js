@@ -48,3 +48,13 @@ if(limit<=score){
 }else{
     console.log("Oh nooo...");
 }
+
+//07 - Condition II
+
+var password = "azerty";
+
+if(password.length>=5){
+    console.log("The password is secure");
+}
+
+console.log(password.length);
