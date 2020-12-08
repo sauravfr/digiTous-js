@@ -90,4 +90,21 @@ switch (month) {
 		console.log("That's not a season...");
 }
 
+//Bonus III
+var roundedNumber = 3.6;
+if(Math.floor(roundedNumber)) {
+    console.log(Math.round(roundedNumber));
+}
+var roundedNumber = 3.3;
+if(Math.floor(roundedNumber)) {
+    console.log(Math.round(roundedNumber));
+}
+var roundedNumber = 3.8;
+if(Math.floor(roundedNumber)) {
+    console.log(Math.round(roundedNumber));
+}
+var roundedNumber = 12.4;
+if(Math.floor(roundedNumber)) {
+    console.log(Math.round(roundedNumber));
+}
  
