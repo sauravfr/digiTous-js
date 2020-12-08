@@ -19,11 +19,23 @@ console.log(rounded);
 var test = 12;
 var bis = 5;
 console.log(test+bis);
+console.log(test-bis);
+console.log(test*bis);
+console.log(test/bis);
+console.log(test%bis);
 
 //05 - Comparaison
 var test =143;
 var bis = 219;
 console.log(test==bis);
+console.log(test===bis);
+console.log(test!=bis);
+console.log(test!==bis);
+console.log(test>bis);
+console.log(test<bis);
+console.log(test>=bis);
+console.log(test<+bis);
+
 
 //06 - Condition
 var limit = 50;
@@ -48,4 +60,13 @@ if(limit<=score || password.length>=5) {
     console.log("Something is good");
 }else{
     console.log("Nothing is good" );
+}
+
+//Bonus
+
+var random = Math.floor(Math.random() * 6) + 1;
+if(random===6){
+    console.log("Yes I win !");
+}else{
+    console.log("So close...");
 }
