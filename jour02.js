@@ -39,3 +39,12 @@ var bis = 219;
 
 console.log(test==bis);
 
+//06 - Condition
+
+var limit = 50;
+var score = 64;
+if(limit<=score){
+    console.log("Ok good !");
+}else{
+    console.log("Oh nooo...");
+}
