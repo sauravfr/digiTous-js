@@ -23,5 +23,10 @@ console.log(objects);
 objects.shift("chair");
 console.log(objects);
 
+//04 - Order
+var numbers = [4, 10, 8, 12, 6];
+console.log(numbers.reverse());
+console.log(numbers.sort((a, b) => a - b));
+
 
 
