@@ -77,3 +77,10 @@ var promo4 = ["Ahmed", "Mohammed", "Houra", "Mohamad Bailo", "Kitty", "Elisabeth
 var name = Math.floor(Math.random() * promo4.length);
 
 console.log(promo4[name]);
+
+//Bonus IV
+var tableau = [];
+for (var i = 0; i < 20; i++){
+    tableau.push(Math.floor(Math.random() * 100 ) )
+}
+console.log(tableau);
