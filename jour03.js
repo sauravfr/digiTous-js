@@ -28,5 +28,13 @@ var numbers = [4, 10, 8, 12, 6];
 console.log(numbers.reverse());
 console.log(numbers.sort((a, b) => a - b));
 
+//## 05 - Boucle
+var total = 0;
+var limit = 10;
+while(total<limit){
+    total++;
+    console.log(total);
+}
+
 
 
