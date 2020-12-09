@@ -29,12 +29,22 @@ console.log(numbers.reverse());
 console.log(numbers.sort((a, b) => a - b));
 
 //## 05 - Boucle
+
 var total = 0;
-var limit = 10;
-while(total<limit){
-    total++;
-    console.log(total);
+for(i=1; i<=10; i++){
+    total+=i;
 }
+console.log(total);
 
 
 
+
+//## 06 - Reverse
+/*var sentence = "Hello Konexio !"
+var result = "";
+for(i = sentence.length; i > -1; i--){
+    result += str.charAt(i);
+
+    console.log(charAt(i));
+};
+*/
