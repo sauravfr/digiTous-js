@@ -40,11 +40,9 @@ console.log(total);
 
 
 //## 06 - Reverse
-/*var sentence = "Hello Konexio !"
-var result = "";
-for(i = sentence.length; i > -1; i--){
-    result += str.charAt(i);
-
-    console.log(charAt(i));
-};
-*/
+var sentence = "Hello Konexio !"
+var newString = "";
+for (var i = sentence.length - 1; i >= 0; i--) { 
+    newString = newString += sentence[i]; 
+}
+console.log(newString);
