@@ -61,3 +61,11 @@ for (var i=1; i <= 100; i++){
     else
         console.log(i);
 };
+
+//Bonus II
+var num = 0;
+while(i<=10){
+    i++
+    total+=i;
+};
+console.log(total);
