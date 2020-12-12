@@ -1,9 +1,10 @@
-var x = 5;
-var y = 6;
-var i =0;
-if (i<3){
-     i++
-     console.log(box1+box2+i);
-     box1 = box1 + box2;
+var count =[];
+for(var i = 100; i<=1000; i++){
+    if(i%7===0){
+        count.push(i);
+    }
 }
-console.log(i);
+count = count.length;
+console.log(`Comptons :  ${count}`);
+
+

@@ -85,4 +85,18 @@ for (var i = 0; i < 20; i++){
 }
 console.log(tableau);
 
+//1
 
+var total = 0;
+for(i=25; i<=75; i++){
+    total+=i;
+}
+console.log(total); 
+
+//2 
+
+var total = 1;
+for(i=10; i<=15; i++){
+    total*=i;
+}
+console.log(total);
