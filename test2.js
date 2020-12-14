@@ -1,11 +1,11 @@
-//04 - Compare
+//05 - Add Up
 
-function compare(num1, num2) {
-    if (num1 > num2) {
-        console.log(`${num1} is bigger`);
-    } else {
-        console.log(`${num2} is bigger`);
+function addUp(num) {
+    var sum = 0;
+    for (var i = 1; i <= num; i++) {
+        sum += i;
     }
-    return;
+    return sum;
 }
-compare(20, 3);
+var totel = addUp(12);
+console.log(totel);

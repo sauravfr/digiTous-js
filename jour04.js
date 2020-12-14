@@ -52,3 +52,15 @@ function compare(num1, num2) {
     return;
 }
 compare(20, 3);
+
+//05 - Add Up
+
+function addUp(num) {
+    var sum = 0;
+    for (var i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
+var totel = addUp(12);
+console.log(`Add up : ${totel}`);
