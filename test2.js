@@ -1,12 +1,11 @@
-// 03 - Even
+//04 - Compare
 
-function checkIfEven(num) {
-    if (num % 2 === 0) {
-        console.log(`${num} is even number.`);
+function compare(num1, num2) {
+    if (num1 > num2) {
+        console.log(`${num1} is bigger`);
     } else {
-        console.log(`${num} is odd number.`)
+        console.log(`${num2} is bigger`);
     }
-    return num;
-
+    return;
 }
-checkIfEven(10)
+compare(20, 3);
