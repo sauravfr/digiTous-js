@@ -1,11 +1,10 @@
-//05 - Add Up
+//06 - Time
 
-function addUp(num) {
-    var sum = 0;
-    for (var i = 1; i <= num; i++) {
-        sum += i;
-    }
-    return sum;
+function format(num) {
+    var hours = Math.floor(num / 3600);
+    num %= 3600;
+    var minutes = Math.floor(num / 60);
+    var seconds = num % 60;
+    console.log(`${hours}:${minutes}:${seconds}`)
 }
-var totel = addUp(12);
-console.log(totel);
+format(3700);
