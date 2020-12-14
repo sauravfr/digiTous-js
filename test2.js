@@ -1,6 +1,12 @@
-//03 - Unique
-var numbers = [];
-for (var i = 1; i <= 50; i++) {
-    numbers.push(Math.floor(Math.random() * 151) + 50);
+// 03 - Even
+
+function checkIfEven(num) {
+    if (num % 2 === 0) {
+        console.log(`${num} is even number.`);
+    } else {
+        console.log(`${num} is odd number.`)
+    }
+    return num;
+
 }
-console.log(numbers);
+checkIfEven(10)

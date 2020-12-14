@@ -27,3 +27,16 @@ console.table(cats);
 if (cat2.isCute == true) {
     console.log("So cute !");
 }
+
+// 03 - Even
+
+function checkIfEven(num) {
+    if (num % 2 === 0) {
+        console.log(`${num} is even number.`);
+    } else {
+        console.log(`${num} is odd number.`)
+    }
+    return num;
+
+}
+checkIfEven(10)
