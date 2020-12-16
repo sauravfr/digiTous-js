@@ -5,5 +5,5 @@ function formatDate(date) {
     return `${d}/ ${m}/${y} `
 }
 
-var dateFormet = formatDate(new Date(2020, 12, 16));
+var dateFormet = formatDate(new Date(2002, 12, 16));
 console.log(dateFormet);
