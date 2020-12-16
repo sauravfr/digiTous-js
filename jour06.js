@@ -1,6 +1,10 @@
 //01 - Format
-function formatDate(aaaa, mm, jj) {
-
-    console.log(`${jj}/${mm}/${aaaa}`);
+function formatDate(date) {
+    var d = date.getDate();
+    var m = date.getMonth() + 1;
+    var y = date.getFullYear();
+    return `${d}/ ${m}/${y} `
 }
-formatDate(2020, 12, 16);
+
+var dateFormet = formatDate(new Date(2020, 12, 16));
+console.log(dateFormet);
