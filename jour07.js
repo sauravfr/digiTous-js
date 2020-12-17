@@ -5,6 +5,4 @@ function sortLetters(text) {
     text = text.join("");
     console.log(text);
 }
-
-
 sortLetters("konexio");
