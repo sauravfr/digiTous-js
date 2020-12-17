@@ -1,6 +1,17 @@
-//02 - XOXO
-function countEach(string) {
-    var regex = /[a-z]+/g;
-    console.log(regex.test(string));
+//Bonus
+
+function makeItSpongeBob(text) {
+    var helloWorld = ''
+    var string;
+    for (i = 0; i <= text.length - 1; i++) {
+        string = text[i];
+        if (text[i] == string.toUpperCase()) {
+            helloWorld += string.toLowerCase();
+        } else {
+            helloWorld += string.toUpperCase();
+        }
+    }
+    console.log(helloWorld)
 }
-countEach("xxxoooox");
+
+makeItSpongeBob("Javascript is easy");
