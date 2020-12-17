@@ -1,10 +1,11 @@
 //01 - Format
 function formatDate(date) {
-    var d = date.getDate();
-    var m = date.getMonth();
-    var y = date.getFullYear();
-    return `${d}/ ${m}/${y} `
+    var dates = new Date(date);
+    var d = dates.getDate();
+    var m = dates.getMonth() + 1;
+    var y = dates.getFullYear();
+    console.log(`${d}/${m}/${y} `);
+
 }
 
-var dateFormet = formatDate(new Date(2002, 5, 16));
-console.log(dateFormet);
+formatDate("2020-12-17");
