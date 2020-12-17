@@ -1,17 +1,13 @@
-//Bonus
+//Bonus II
 
-function makeItSpongeBob(text) {
-    var helloWorld = ''
-    var string;
-    for (i = 0; i <= text.length - 1; i++) {
-        string = text[i];
-        if (text[i] == string.toUpperCase()) {
-            helloWorld += string.toLowerCase();
-        } else {
-            helloWorld += string.toUpperCase();
-        }
-    }
-    console.log(helloWorld)
+function caseInsensitiveSort(strA, strB) {
+    return strA.toLowerCase().localeCompare(strB.toLowerCase());
 }
 
-makeItSpongeBob("Javascript is easy");
+function sortLetters(text) {
+    text = text.split("");
+    text = text.sort(caseInsensitiveSort);
+    text = text.join("");
+    console.log(text);
+}
+sortLetters("koNeXio");
