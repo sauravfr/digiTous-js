@@ -1,3 +1,4 @@
+//06 - Cakes
 var cakes = [{
         name: "cake",
         flavor: "vanilla",
@@ -25,7 +26,7 @@ var cakes = [{
     },
 ];
 var chocolateCakes = [];
-var chocolateCake = cakes.filter(function(cake) {
+var chocolateCake = cakes.filter(cake => {
     if (cake.flavor === "chocolate") { chocolateCakes.push(cake); }
 })
 
