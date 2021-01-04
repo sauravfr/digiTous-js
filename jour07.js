@@ -80,18 +80,10 @@ var chocolateCake = cakes.filter(function(cake) {
     if (cake.flavor === "chocolate") { chocolateCakes.push(cake); }
 })
 
-var choco = ((chocolateCakes, oldStatus, status) => {
-    chocolateCakes.map(item => {
-        if (item.status === oldStatus) {
-            item.status = status;
-            return item.status;
-        } else {
-            return item;
-        }
+const choco = (chocolateCakes, oldStatus, newStatus) =>
+    chocolateCakes.map(cake => {
+        if (cake.status === oldStatus) cake.status = newStatus;
+        return cake;
     });
-    console.log(chocolateCakes);
-});
-
 var soldOut = choco(chocolateCakes, 'available', "sold out !");
-
 console.log(soldOut);

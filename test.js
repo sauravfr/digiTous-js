@@ -1,41 +1,38 @@
-let schools = [{
-        name: 'YorkTown',
-        country: 'Spain'
+var cakes = [{
+        name: "cake",
+        flavor: "vanilla",
+        status: "available"
     },
     {
-        name: 'Stanford',
-        country: 'USA'
+        name: "brownie",
+        flavor: "chocolate",
+        status: "available"
     },
     {
-        name: 'Gymnasium Achern',
-        country: 'Germany'
-    }
+        name: "pie",
+        flavor: "strawberry",
+        status: "available"
+    },
+    {
+        name: "muffin",
+        flavor: "pistachio",
+        status: "available"
+    },
+    {
+        name: "donut",
+        flavor: "chocolate",
+        status: "available"
+    },
 ];
+var chocolateCakes = [];
+var chocolateCake = cakes.filter(function(cake) {
+    if (cake.flavor === "chocolate") { chocolateCakes.push(cake); }
+})
 
-let updatedSchools = [{
-        name: 'New Gen',
-        country: 'Spain'
-    },
-    {
-        name: 'Stanford',
-        country: 'USA'
-    },
-    {
-        name: 'Gymnasium Achern',
-        country: 'Germany'
-    }
-];
-
-const editSchoolName = ((schools, oldName, name) => {
-    schools.map(item => {
-        if (item.name === oldName) {
-            item.name = name;
-            return item.name;
-        } else {
-            return item;
-        }
+const choco = (chocolateCakes, oldStatus, newStatus) =>
+    chocolateCakes.map(cake => {
+        if (cake.status === oldStatus) cake.status = newStatus;
+        return cake;
     });
-    console.log(schools);
-});
-
-editSchoolName(schools, 'YorkTown', "New Gen");
+var soldOut = choco(chocolateCakes, 'available', "sold out !");
+console.log(soldOut);
