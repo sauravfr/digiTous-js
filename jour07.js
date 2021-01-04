@@ -31,3 +31,12 @@ var shortNames = longNames.map(function(obj) {
 })
 console.log(shortNames);
 */
+//04 - Filter Numbers
+var array = [1, "toto", 34, "javascript", 8];
+
+var numbers = array.filter(function(item) {
+    return (parseInt(item) === item);
+});
+
+
+console.log(numbers);
