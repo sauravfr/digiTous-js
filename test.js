@@ -1,7 +1,41 @@
-var array = [1, 2, 3, 4, 5];
+let schools = [{
+        name: 'YorkTown',
+        country: 'Spain'
+    },
+    {
+        name: 'Stanford',
+        country: 'USA'
+    },
+    {
+        name: 'Gymnasium Achern',
+        country: 'Germany'
+    }
+];
 
-var double = array.map(function(num) {
-    return num * 2
-})
+let updatedSchools = [{
+        name: 'New Gen',
+        country: 'Spain'
+    },
+    {
+        name: 'Stanford',
+        country: 'USA'
+    },
+    {
+        name: 'Gymnasium Achern',
+        country: 'Germany'
+    }
+];
 
-console.log(double);
+const editSchoolName = ((schools, oldName, name) => {
+    schools.map(item => {
+        if (item.name === oldName) {
+            item.name = name;
+            return item.name;
+        } else {
+            return item;
+        }
+    });
+    console.log(schools);
+});
+
+editSchoolName(schools, 'YorkTown', "New Gen");
