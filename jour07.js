@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 //01 - File System
-/*fs.readFile("./jour07.txt", (error, data) => {
+fs.readFile("./jour07.txt", (error, data) => {
     console.log(error);
     console.log(data.toString());
 })
@@ -27,7 +27,7 @@ var longNames = [{
     }
 ];
 var shortNames = longNames.map(function(obj) {
-    return "Name:" + [obj.firstName] + " " + [obj.lastName];
+    return { name: obj.firstName + " " + obj.lastName }
 })
 console.log(shortNames);
 
@@ -47,7 +47,7 @@ var even = numbers.filter(function(num) {
 })
 
 console.log(even);
-*/
+
 //06 - Cakes
 var cakes = [{
         name: "cake",
@@ -87,10 +87,10 @@ const choco = (chocolateCakes, oldStatus, newStatus) =>
     });
 var soldOut = choco(chocolateCakes, 'available', "sold out !");
 console.log(soldOut);*/
-var soldOut = cakes.filter(element => {
-    if (element.flavor === "chocolate") {
-        element.status = "sold out!"
-        return element
+var soldOut = cakes.filter(cake => {
+    if (cake.flavor === "chocolate") {
+        cake.status = "sold out!"
+        return cake
     }
 
 })

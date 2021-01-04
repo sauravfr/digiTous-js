@@ -1,39 +1,14 @@
-//06 - Cakes
-var cakes = [{
-        name: "cake",
-        flavor: "vanilla",
-        status: "available"
+//03 - Map Names
+var longNames = [{
+        firstName: "Jane",
+        lastName: "Doe"
     },
     {
-        name: "brownie",
-        flavor: "chocolate",
-        status: "available"
-    },
-    {
-        name: "pie",
-        flavor: "strawberry",
-        status: "available"
-    },
-    {
-        name: "muffin",
-        flavor: "pistachio",
-        status: "available"
-    },
-    {
-        name: "donut",
-        flavor: "chocolate",
-        status: "available"
-    },
+        firstName: "John",
+        lastName: "Smith"
+    }
 ];
-var chocolateCakes = [];
-var chocolateCake = cakes.filter(cake => {
-    if (cake.flavor === "chocolate") { chocolateCakes.push(cake); }
+var shortNames = longNames.map(function(obj) {
+    return { name: obj.firstName + obj.lastName }
 })
-
-const choco = (chocolateCakes, oldStatus, newStatus) =>
-    chocolateCakes.map(cake => {
-        if (cake.status === oldStatus) cake.status = newStatus;
-        return cake;
-    });
-var soldOut = choco(chocolateCakes, 'available', "sold out !");
-console.log(soldOut);
+console.log(shortNames);
