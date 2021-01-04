@@ -30,13 +30,20 @@ var shortNames = longNames.map(function(obj) {
     return "Name:" + [obj.firstName] + " " + [obj.lastName];
 })
 console.log(shortNames);
-*/
+
 //04 - Filter Numbers
 var array = [1, "toto", 34, "javascript", 8];
 
 var numbers = array.filter(function(item) {
     return (parseInt(item) === item);
 });
-
-
 console.log(numbers);
+*/
+//05 - Filter Even
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+var even = numbers.filter(function(num) {
+    return num % 2 === 0;
+})
+
+console.log(even);
