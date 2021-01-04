@@ -75,7 +75,7 @@ var cakes = [{
         status: "available"
     },
 ];
-var chocolateCakes = [];
+/*var chocolateCakes = [];
 var chocolateCake = cakes.filter(cake => {
     if (cake.flavor === "chocolate") { chocolateCakes.push(cake); }
 })
@@ -86,4 +86,12 @@ const choco = (chocolateCakes, oldStatus, newStatus) =>
         return cake;
     });
 var soldOut = choco(chocolateCakes, 'available', "sold out !");
+console.log(soldOut);*/
+var soldOut = cakes.filter(element => {
+    if (element.flavor === "chocolate") {
+        element.status = "sold out!"
+        return element
+    }
+
+})
 console.log(soldOut);
