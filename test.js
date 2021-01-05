@@ -1,13 +1,11 @@
 var request = require('request');
 
-
-// 02 - Chuck Norris
-
-function getFact() {
-    request.get("https://api.chucknorris.io/jokes/random", function(err, response, body) {
-        console.log(err);
-        var value = JSON.parse(body).value;
-        console.log(value);
-    });
+// 03 - Pokemon
+function catchPokemon(number) {
+    request.get(`https://pokeapi.co/api/v2/pokemon/${number}`, function(err, res, body) {
+        var pokemon = JSON.parse(body);
+        console.log(`Id: ${pokemon.id}`);
+        console.log(`Name: ${pokemon.name}`);
+    })
 }
-getFact();
+catchPokemon(5);
